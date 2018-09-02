@@ -1,0 +1,105 @@
+
+
+/*Reset all default margins and padding*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Set Grid*/
+/* Grid does not work in IE */
+.wrapper {
+    display: grid;    
+    grid-template-columns: 2fr 2.5fr 2.5fr;
+    grid-template-rows: auto 21vw 21vw; /*1st row height auto sized, 2nd and 3rd defined as 21vw to stop element stretching out on long screens*/
+    margin: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    position: fixed; /* Set the header to fixed position */
+    top: 0; /* Position the header at the top of the page */
+    width: 25%; 
+    height: 100%;
+    box-shadow: 3px 0px 5px -1px #ccc; /* one sided shadow effect due the negitive value on spread radius */
+}
+
+.main-title {
+    font-size: 50px;
+    margin: 10px 5px 5px 5px;   
+}
+
+.sub-title {
+    font-size: 30px;
+    margin: 5px; 
+}
+
+.blurb {
+    margin: 5px;
+    position: fixed;
+    bottom: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+}
+
+.portrait-pic {
+    position: absolute;
+    left: 5px;
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.content {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid #747704;
+    background-color: #F2F2F2;
+}
+
+.text {
+    margin: 15px 30px 15px 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.box-img {
+    width: 150%; /*needed to fill entire element*/
+    height: 21vw;
+    object-fit: cover; /*needed to keep aspect ratio*/
+} 
+
+.box-1 {
+    margin: 5px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.box-2{
+    margin:5px; 
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
+.box-3{
+    margin: 5px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.box-4{
+    margin: 5px; 
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
