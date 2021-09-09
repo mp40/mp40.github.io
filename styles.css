@@ -61,6 +61,12 @@ body {
     box-shadow: inset 0px 3px 11px -1px rgba(0,0,0,0.75);
 }
 
+.logo:not(:active) {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 .content {
     padding: 6rem 4rem 0;
     display: flex;
